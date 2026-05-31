@@ -1,3 +1,4 @@
+import {Audio} from "@remotion/media";
 import {
   AbsoluteFill,
   Img,
@@ -224,6 +225,12 @@ export const MyComposition = () => {
         overflow: "hidden",
       }}
     >
+      <Audio
+        loop
+        playbackRate={1.5}
+        src={staticFile("枕边的祝愿.mp3")}
+        volume={0.61}
+      />
       <Img
         src={staticFile("healthy-baby-background.png")}
         style={{
